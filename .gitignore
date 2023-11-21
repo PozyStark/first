@@ -1,0 +1,17 @@
+# 2.1
+# а) Все что в каталоге билд
+/build/*
+# б) Все jar кроме module2.jar
+*.jar
+!module2.jar
+# c) application-local.properties полностью
+application-local.properties
+# д) Папка с идеями
+.idea/
+# е) Папка с идеями кроме одной
+.idea_copy/**
+!workspace.xml
+
+# 2.2
+**/build/
+!src/main/modules/module2/build/
